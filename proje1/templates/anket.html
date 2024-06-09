@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevre ve Doğa Anketi</title>
+    <link rel="stylesheet" href="/static/css/anket.css">
+</head>
+<body>
+    <header>
+        <h1>Doğa Bilgi Portalı</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('anasayfa') }}">Ana Sayfa</a></li>
+            <li><a href="{{ url_for('agaclar') }}">Ağaçlar</a></li>
+            <li><a href="{{ url_for('nesli') }}">Nesli Tükenen Hayvanlar</a></li>
+            <li><a href="{{ url_for('dogal') }}">Doğal Yaşam</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Çevre ve Doğa Anketi</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <p>Nesli tükenmekte olan hayvanların büyük çoğunluğu habitat kaybı nedeniyle mi tehlike altında?</p>
+                <label><input type="radio" name="q1" value="yes"> Evet</label>
+                <label><input type="radio" name="q1" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Nesli tükenen hayvanları korumak için yasalar ve uluslararası anlaşmalar gerekli midir?</p>
+                <label><input type="radio" name="q2" value="yes"> Evet</label>
+                <label><input type="radio" name="q2" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Orman ekosistemleri, biyolojik çeşitliliği korumada kritik bir rol oynar mı?</p>
+                <label><input type="radio" name="q3" value="yes"> Evet</label>
+                <label><input type="radio" name="q3" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Ormanlar, karbon depolama ve su arıtma gibi ekolojik hizmetler sağlar mı?</p>
+                <label><input type="radio" name="q4" value="yes"> Evet</label>
+                <label><input type="radio" name="q4" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Ağaçların kök sistemleri, su ve besin maddelerini emmede önemli midir?</p>
+                <label><input type="radio" name="q5" value="yes"> Evet</label>
+                <label><input type="radio" name="q5" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Kontrolsüz ağaç kesimi, orman ekosistemlerine ciddi zararlar verir mi?</p>
+                <label><input type="radio" name="q6" value="yes"> Evet</label>
+                <label><input type="radio" name="q6" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Sürdürülebilir ormancılık, ormanların uzun vadeli sağlığını korumak için gerekli midir?</p>
+                <label><input type="radio" name="q7" value="yes"> Evet</label>
+                <label><input type="radio" name="q7" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Ağaçları koruma ve restorasyon çalışmaları, orman ekosistemlerinin yenilenmesine yardımcı olur mu?</p>
+                <label><input type="radio" name="q8" value="yes"> Evet</label>
+                <label><input type="radio" name="q8" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>Doğal yaşam alanları, birçok türün hayatta kalması için hayati öneme sahip midir?</p>
+                <label><input type="radio" name="q9" value="yes"> Evet</label>
+                <label><input type="radio" name="q9" value="no"> Hayır</label>
+            </div>
+            <div class="question">
+                <p>İklim değişikliği, doğal yaşamı tehdit eden önemli faktörlerden biri midir?</p>
+                <label><input type="radio" name="q10" value="yes"> Evet</label>
+                <label><input type="radio" name="q10" value="no"> Hayır</label>
+            </div>
+            <button type="button" class="submit-btn" onclick="submitSurvey()">Gönder</button>
+        </form>
+    </div>
+    
+    <script src="/static/js/anket.js"></script>
+   
+</body>
+</html>

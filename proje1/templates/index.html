@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çevre Dostu Bilgi Portalı</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Doğa Bilgi Portalı</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('agaclar') }}">Ağaçlar</a></li>
+            <li><a href="{{ url_for('nesli') }}">Nesli Tükenen Hayvanlar</a></li>
+            <li><a href="{{ url_for('dogal') }}">Doğal Yaşam</a></li>
+            <li><a href="{{ url_for('anket') }}">Anket</a></li>
+        </ul>
+    </nav>
+
+    <section class="info-section">
+        <img src="/static/imgs/anasayfa/009-forest-1.png" alt="Ağaçlar" height="90px" width="90px">
+        <div>
+            <h2 style="margin-left: 120px;">Ağaçlar </h2>
+            <p style="margin-left: 50px;">Ağaçlar, çevrenin korunması için kritik bir rol oynar. Karbondioksiti emerek atmosferdeki sera gazlarını azaltır, oksijen üretir ve toprak erozyonunu önlerler. Ormanların korunması, biyoçeşitliliğin sürdürülmesi ve ekosistemlerin dengesinin sağlanması açısından hayati öneme sahiptir.</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <img src="/static/imgs/anasayfa/004-polar-bear.png" alt="Nesli Tükenen Hayvanlar" height="90px" width="90px">
+        <div>
+            <h2 style="margin-left: 120px;">Nesli Tükenen Hayvanlar</h2>
+            <p style="margin-left: 30px;">Nesli tükenen hayvanlar, çevrenin dengesini ve ekosistemlerin sağlığını tehdit eden önemli bir sorundur. İnsan etkisi nedeniyle yaşam alanlarının yok olması, avlanma, kirlilik ve iklim değişikliği gibi faktörler, sayıları azalan hayvan türlerini daha da tehlikeye atmaktadır. Bu nedenle, nesli tükenen hayvanların korunması için acil önlemler alınması ve yaşam alanlarının korunması gerekmektedir.</p>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <img src="/static/imgs/anasayfa/007-habitat.png" alt="Doğal Yaşam" height="90px" width="90px">
+        <div>
+            <h2 style="margin-left: 120px;">Doğal Yaşam</h2>
+            <p style="margin-left: 50px;">Doğal yaşam, çeşitli canlı türlerinin yaşam alanıdır ve ekosistemlerin dengesini sağlar. Ormanlar, nehirler, göller ve denizler gibi doğal habitatlar, hayvan ve bitki türlerinin yaşamını destekler. Bu ekosistemler, hava kalitesini korur, su döngüsünü düzenler ve toprak erozyonunu önler. Doğal yaşamın korunması, biyoçeşitliliğin sürdürülmesi ve insanların refahının güvence altına alınması için kritiktir.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Çevre Dostu Bilgi Portalı &copy; 2024</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

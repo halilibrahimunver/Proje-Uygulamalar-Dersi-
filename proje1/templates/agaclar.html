@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ağaçlar Hakkında Bilgiler</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ağaçlar Hakkında Bilgiler</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('anasayfa') }}">Ana Sayfa</a></li>
+            <li><a href="{{ url_for('agaclar') }}">Ağaçlar</a></li>
+            <li><a href="{{ url_for('nesli') }}">Nesli Tükenen Hayvanlar</a></li>
+            <li><a href="{{ url_for('dogal') }}">Doğal Yaşam</a></li>
+        </ul>
+    </nav>
+
+    <section id="dogal-yasam">
+        <div id="orman-ekosistemi" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/006-habitat.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Orman Ekosistemi ve Biodiversite</h2>
+            <p style="margin-left: 50px;">Ormanlar, dünyadaki yaşamın büyük bir bölümünü barındırır. Farklı bitki ve hayvan türlerinin yanı sıra mantarlar ve mikroorganizmalar gibi çok çeşitli canlıları desteklerler. Bu çeşitlilik, biyolojik çeşitliliğin korunması için kritik öneme sahiptir. Ormanlar, karbon depolama, su döngüsü ve toprak koruma gibi ekosistem hizmetleri sağlar. Ormansızlaşma ve habitat kaybı, biyolojik çeşitliliği tehdit eder. Bu nedenle, ormanların korunması ve sürdürülebilir yönetimi büyük önem taşır.</p>
+        </div>
+
+        <div id="ekolojik-hizmetler" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/005-ecology.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Ekolojik Hizmetler</h2>
+            <p style="margin-left: 80px;">Ağaçlar ve ormanlar, önemli ekosistem hizmetleri sağlarlar. Bunlar arasında karbon depolama, suyun temizlenmesi, hava kalitesinin iyileştirilmesi ve toprak erozyonunun önlenmesi gibi faydalar bulunur. Ağaçlar, atmosferden karbonu emer ve iklim değişikliğini yavaşlatır. Ayrıca, suyu filtreleyerek temiz su kaynaklarının korunmasına yardımcı olurlar. Havadaki kirleticileri filtreleyerek hava kalitesini iyileştirirler. Toprağı koruyarak erozyonu önler ve tarım alanlarının verimliliğini artırırlar. Bu ekolojik hizmetler, insanların sağlığı ve refahı için hayati öneme sahiptir.</p>
+        </div>
+
+        <div id="agac-anatomisi" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/006-wood.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Ağaçların Anatomisi ve Fizyolojisi</h2>
+            <p style="margin-left: 70px;">Ağaçların anatomisi ve fizyolojisi, onların hayatta kalma ve büyüme süreçlerini açıklar. Kökler, su ve besin maddelerini topraktan alır ve ağacı sabitler. Gövde, bu maddeleri yapraklara taşıyan ve ağacın yapısını destekleyen bir taşıma sistemidir. Yapraklar, fotosentez yaparak enerji üretir ve oksijen salınımını sağlar. Çiçekler, üreme organlarıdır ve tozlaşma yoluyla yeni ağaçların oluşumunu sağlar. Meyveler, tohumları korur ve yayılmasına yardımcı olur.</p>
+        </div>
+
+        <div id="agac-kesimi" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/002-tree-stump.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Ağaç Kesiminin Etkileri</h2>
+            <p style="margin-left: 80px;">Kontrolsüz ağaç kesimi ve ormansızlaşma, çevre ve insanlar üzerinde ciddi etkiler yaratır. Habitat kaybı, birçok bitki ve hayvan türünün yok olmasına neden olur. Ormanların azalması, atmosferdeki karbon miktarını artırarak iklim değişikliğine katkıda bulunur. Ağaçların yok olması, suyun toprakta tutulmasını zorlaştırarak sel riskini artırır. Biyoçeşitliliğin azalması, ekosistemlerin dayanıklılığını ve sağlığını tehlikeye atar. Ayrıca, yerel toplulukların geçim kaynaklarını ve kültürel değerlerini olumsuz etkiler.</p>
+        </div>
+
+        <div id="surdurulebilir-ormancilik" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/004-plant.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Sürdürülebilir Ormancılık Uygulamaları</h2>
+            <p style="margin-left: 40px;">Sürdürülebilir ormancılık, ormanların uzun vadeli sağlık ve verimliliğini korumayı amaçlar. Ormansızlaşmanın önlenmesi, doğal habitatların korunmasını ve biyolojik çeşitliliğin sürdürülmesini sağlar. Ağaçlandırma, kesilen ağaçların yerine yenilerini dikerek ormanların yenilenmesine katkıda bulunur. Erozyon kontrolü, toprak kaybını önler ve su kaynaklarının korunmasına yardımcı olur. Seçici kesim yöntemleri, sadece belirli ağaçların hasat edilmesini sağlayarak ormanın genel sağlığını korur. Yerel toplulukların dahil edilmesi ve eğitilmesi, sürdürülebilir ormancılık uygulamalarının başarısını artırır.</p>
+        </div>
+
+        <div id="koruma-ve-restorasyon" class="info-section">
+            <div>
+                <img src="/static/imgs/anasayfa/001-fence.png" alt="Ağaçlar" height="90px" width="90px">
+            </div>
+            <h2 style="margin-left: 120px;">Ağaçları Koruma ve Restorasyon Çalışmaları</h2>
+            <p style="margin-left: 50px;">Ağaçları koruma ve restorasyon çalışmaları, orman ekosistemlerini ve biyolojik çeşitliliği koruma amacı taşır. Bu projeler, ağaçlandırma kampanyaları ve tahrip edilen orman alanlarının yeniden yeşillendirilmesini içerir. Yerel topluluklar, ormanların korunması ve sürdürülebilir kullanımı konusunda bilinçlendirilir ve eğitilir. Sivil toplum kuruluşları, kamuoyunu bilgilendirir ve ağaçlandırma projelerine gönüllü desteği sağlar. Hükümetler, orman politikaları ve yasaları ile bu çalışmaları destekler ve teşvik eder. Ortak çabalar, ağaçların korunması ve doğaya kazandırılmasında önemli ilerlemeler sağlar.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Çevre Dostu Bilgi Portalı &copy; 2024</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

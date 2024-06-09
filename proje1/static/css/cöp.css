@@ -1,0 +1,49 @@
+.oyun-alani {  
+    position: relative;
+    width: 75vw; /* Ekranın %75'ini kaplar */
+    height: 75vh; /* Ekranın %75'ini kaplar */
+    margin: auto;
+    border: 5px solid #000000;
+    overflow: hidden;
+}
+
+.copluk-1, .copluk-2 {
+    position: absolute;
+    bottom: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.copluk-1 {
+    left: 50px;
+}
+
+.copluk-2 {
+    right: 50px;
+}
+
+.copluk-1 img, .copluk-2 img {
+    width: 100%;
+    height: auto;
+}
+
+.cop {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+}
+
+.puan, .sure {
+    position: absolute;
+    top: 10px;
+    font-size: 24px;
+}
+
+.puan {
+    left: 10px;
+}
+
+.sure {
+    right: 10px;
+}

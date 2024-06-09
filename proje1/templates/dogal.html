@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğal Yaşam Hakkında Bilgiler</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Doğal Yaşam Hakkında Bilgiler</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('anasayfa') }}">Ana Sayfa</a></li>
+            <li><a href="{{ url_for('agaclar') }}">Ağaçlar</a></li>
+            <li><a href="{{ url_for('nesli') }}">Nesli Tükenen Hayvanlar</a></li>
+            <li><a href="{{ url_for('dogal') }}">Doğal Yaşam</a></li>
+        </ul>
+    </nav>
+
+    <section id="dogal-yasam">
+        <div>
+            <img src="/static/imgs/anasayfa/001-healthy-life.png" alt="Ağaçlar" height="90px" width="90px" class="icon">
+            <h2>Doğal Yaşam Alanları ve Önemi</h2>
+        </div>
+        <p>Doğal yaşam alanları, birçok canlı türüne ev sahipliği yapar ve ekosistemlerin korunması için önemlidir. Ormanlar, nehirler, göller, çayırlar ve denizler gibi çeşitli habitatlar, farklı hayvan ve bitki türlerinin yaşamını destekler. Bu alanlar, biyolojik çeşitliliğin sürdürülmesi ve ekosistem hizmetlerinin devam etmesi için kritik öneme sahiptir.
+
+        Doğal yaşam alanlarının korunması, su ve hava kalitesinin iyileştirilmesi, toprak erozyonunun önlenmesi ve iklim değişikliği gibi ekosistem hizmetlerinin sağlanmasına yardımcı olur. Ayrıca, insanların doğayla bağlarını güçlendirir ve sağlık ve refahlarını artırır.</p>
+    </section>
+
+    <section id="dogal-yasam-tehditleri">
+        <div>
+            <img src="/static/imgs/anasayfa/002-waste.png" alt="Tehditler" height="90px" width="90px" class="icon">
+            <h2>Doğal Yaşamın Tehditleri</h2>
+        </div>
+        <p>Doğal yaşamı tehdit eden birçok faktör bulunmaktadır. Bunlar arasında habitat kaybı, kirlilik, iklim değişikliği, yasadışı avlanma ve türler arası rekabet gibi etkenler yer almaktadır. Bu tehditler, doğal yaşamın devamını tehlikeye atmaktadır.
+
+        Habitat kaybı, tarım, kentleşme, ağaç kesimi ve endüstriyel faaliyetler gibi insan etkinlikleri nedeniyle doğal yaşam alanlarının yok olması anlamına gelir. Bu durum, birçok hayvan ve bitki türünün yaşamını ve üreme olanaklarını azaltmaktadır. Ayrıca, habitat kaybı biyolojik çeşitliliğin azalmasına ve ekosistemlerin dengesinin bozulmasına yol açar.
+        
+        İklim değişikliği, dünyanın iklim koşullarında meydana gelen ani ve uzun süreli değişikliklerdir. Artan sera gazı emisyonları, küresel ısınma, deniz seviyesinin yükselmesi ve aşırı hava olayları gibi etkenler iklim sistemlerini bozar. Bu da habitatları ve canlı türlerini etkiler, birçok türün yaşamını tehlikeye atar.
+        
+        Kirlilik, su, hava ve toprak kirliliği gibi çeşitli biçimlerde ortaya çıkabilir. Endüstriyel atıklar, tarım ilaçları ve evsel atıklar gibi kaynaklar doğal yaşamı olumsuz etkiler. Kirlilik, su kaynaklarının kirlenmesiyle balık ve diğer su organizmalarının yaşamını tehdit eder, hava kirliliği solunum yolu hastalıklarına neden olabilir ve toprak kirliliği verimli tarım alanlarının azalmasına yol açar.</p>
+    </section>
+
+    <footer>
+        <p>Çevre Dostu Bilgi Portalı &copy; 2024</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
